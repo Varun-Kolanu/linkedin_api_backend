@@ -4,6 +4,7 @@ import cors from "cors"
 import jwt from "jsonwebtoken"
 import { isTokenActive } from "./middlewares/isTokenActive.js"
 import { apiResponse } from "./utils/apiResponse.js"
+import fetch from "node-fetch"
 config()
 export const app = express()
 app.use(express.static("public"))
